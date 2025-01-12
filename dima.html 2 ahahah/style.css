@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.body{
+    font-family: Impact
+}
+.wrap{
+    height: 100vh;
+    padding: 5%;
+    background: linear-gradient(#c2f3ff, #b7ebff, #0094a7, #586d79, #28353a);
+}
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.pic{
+    width: 300px;
+    height: 300px;
+    border: 2px solid #000;
+    border-radius: 20px;
+}
+.linebox{
+    width: 5px;
+    height: 85vh;
+    background-color: #000;
+    border-radius: 15px;
+}
+.right{
+    width: 40%;
+}
+.name{
+    color: #fff;
+    font-size: 42px;
+    margin-bottom: 30px;
+}
+.desc{
+    color: #fff;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+.rightboxtext{
+    color: #e8e8e8;
+    font-size: 18px;
+}
+.rightboxbutton{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+}
+.button{
+    width: 180px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 10px 30px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    align-items: center;
+    transition: 0.3s;
+}
+.button:hover{
+    background-color: rgb(255, 217, 0);
+    border-radius: 50px;
+}
+.links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+}
+h3:hover{
+    background-color: #00000080;
+    border-radius: 30px;
+    transition: 1s;
+}
+.ultrakill{
+    width: 80px;
+    height: 80px;
+}
+@media(max-width:1030px){
+    .pic{
+        width: 250px;
+        height: 250px;
+    }
+    .button{
+        width: 130px;
+    }
+}
+@media(max-width:500px){
+    .container{
+        display: block;
+    }
+    .line{
+        display: none;
+    }
+    .right{
+        width: 90%;
+    }
+    .leftimg{
+        display: flex;
+        justify-content: center;
+    }
+    .pic{
+        margin-bottom: 30px;
+    }
+    .wrap{
+        height: 100%;
+    }
+    .button{
+        width: 90px;
+        padding: 15px;
+    }
+    h3{
+        font-size: small;
+    }
+}
